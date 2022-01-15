@@ -38,8 +38,8 @@ button {
 }
 /* colection section */
 .collection {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 8%;
+  margin-right: 8%;
   margin-top: 5%;
 }
 h2 {
@@ -53,12 +53,12 @@ h2 {
 }
 .item {
   background-color: #ffff;
-  box-shadow: 2px 2px 10px rgba(174, 218, 218, 0.397);
+  box-shadow: 2px 2px 30px rgba(174, 218, 218, 0.397);
   /* box-shadow: 5px 5px 10px whitesmoke; */
 
-  padding: 10px;
+  padding: 20px;
 
-  width: 329px;
+  width: 300px;
   height: 476px;
 }
 /* .fas fa-star, */
@@ -83,43 +83,55 @@ h5 {
   margin: 5%;
 }
 .detail {
-  width: 404px;
-  height: 270px;
+  width: 380px;
+  height: 235px;
+  padding-left: 20px;
+  margin-top: 0;
 }
 course-pic {
-  width: 404px;
-  height: 270px;
+  width: 380px;
+  height: 235px;
 }
-/* section footer */
+/* Footer part */
 footer {
-  margin: 0;
-  height: 150px;
-  background-color: rgb(19, 18, 18);
+  background-color: #0a0826;
   margin-top: 50px;
+  color: white;
 }
 .footer-content {
-  color: white;
   text-align: center;
 }
 .footer-content h2 {
-  padding-bottom: 0px;
+  padding-bottom: 2px;
   padding-top: 20px;
+  font-size: 20px;
+  font-weight: 100;
+
+  margin: 0px;
 }
-.footer-content h6 {
+.footer-content p {
   margin-bottom: 0px;
   margin-top: 0px;
+  font-size: 10px;
 }
 
 .footer-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
 }
+
+p .fa-twitter-square,
+.fa-facebook,
+.fa-youtube,
+.fa-instagram-square {
+  padding-right: 10px;
+}
+/* Media Query - Small Device */
 @media only screen and (max-width: 688px) {
   .intro {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .items {
     display: grid;
@@ -130,7 +142,7 @@ footer {
     flex-direction: column;
   }
 }
-
+/* Media Query - Medium Device */
 @media only screen and (min-width: 689px) and (max-width: 992px) {
   .items {
     display: grid;
