@@ -2,12 +2,16 @@
 body {
   font-family: "Poppins", sans-serif;
   /* background-color: cornflowerblue; */
+  margin: 0;
+  background-color: aqua;
 }
-
+/* header */
 header {
   margin: 5%;
 }
-.part-1 {
+/* main part */
+/* intro section */
+.intro {
   display: flex;
   justify-content: space-between;
   margin-left: 5%;
@@ -17,12 +21,14 @@ header {
 button {
   background-color: slateblue;
   border-radius: 5px;
-  padding: 5px;
+  padding: 3px 10px;
+  color: white;
 }
 .picture {
   width: 440px;
   height: 414px;
 }
+/* colection section */
 .collection {
   /* background-color: crimson; */
   margin-left: 5%;
@@ -51,6 +57,10 @@ h2 {
 .fill {
   color: goldenrod;
 }
+.fas fa-star,
+.nofill {
+  color: white;
+}
 
 h5 {
   text-align: right;
@@ -58,6 +68,7 @@ h5 {
   padding: 25px;
   color: darkmagenta;
 }
+/* course section */
 .course {
   display: flex;
   justify-content: space-between;
@@ -69,10 +80,12 @@ h5 {
 course-pic {
   width: 40%;
 }
+/* section footer */
 footer {
   margin: 0;
   height: 150px;
   background-color: slateblue;
+  margin-top: 50px;
 }
 .footer-content {
   /* background-color: black; */
@@ -93,4 +106,17 @@ footer {
   justify-content: center;
   align-items: center;
   /* background: chartreuse; */
+  color: white;
+}
+
+@media only screen and (max-width: 688px) {
+  body {
+    background-color: grey;
+  }
+}
+
+@media only screen and (min-width: 689px) and(max-width: 998px) {
+  body {
+    background-color: red;
+  }
 }
