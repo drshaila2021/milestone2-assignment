@@ -11,6 +11,25 @@ body {
 
 header {
   margin: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav ul > li {
+  list-style: none;
+  display: flex;
+  margin-right: 15px;
+}
+.header-nav .fas {
+  margin-right: 15px;
+}
+.header-nav ul {
+  display: flex;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
 }
 
 /* Body main - intro section */
@@ -131,6 +150,12 @@ p .fa-twitter-square,
 /* Media Query - Small Device */
 
 @media only screen and (max-width: 688px) {
+  .header-nav ul,
+  .fa-search {
+    position: absolute;
+    display: none;
+  }
+
   .intro {
     display: flex;
     flex-direction: column-reverse;
@@ -148,6 +173,13 @@ p .fa-twitter-square,
 /* Media Query - Medium Device */
 
 @media only screen and (min-width: 689px) and (max-width: 992px) {
+  .header-sec .fa-bars {
+    position: absolute;
+    display: none;
+  }
+  .fa-bars:hover {
+    position: relative;
+  }
   .items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
