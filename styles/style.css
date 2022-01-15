@@ -3,7 +3,6 @@ body {
   font-family: "Poppins", sans-serif;
   /* background-color: cornflowerblue; */
   margin: 0;
-  background-color: aqua;
 }
 /* header */
 header {
@@ -16,7 +15,6 @@ header {
   justify-content: space-between;
   margin-left: 5%;
   margin-right: 5%;
-  /* background-color: cornsilk; */
 }
 button {
   background-color: slateblue;
@@ -30,7 +28,6 @@ button {
 }
 /* colection section */
 .collection {
-  /* background-color: crimson; */
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 5%;
@@ -53,13 +50,13 @@ h2 {
   width: 329px;
   height: 476px;
 }
-.fas fa-star,
+/* .fas fa-star, */
 .fill {
   color: goldenrod;
 }
-.fas fa-star,
+/* .fas fa-star, */
 .nofill {
-  color: white;
+  color: grey;
 }
 
 h5 {
@@ -75,10 +72,12 @@ h5 {
   margin: 5%;
 }
 .detail {
-  width: 40%;
+  width: 404px;
+  height: 270px;
 }
 course-pic {
-  width: 40%;
+  width: 404px;
+  height: 270px;
 }
 /* section footer */
 footer {
@@ -88,7 +87,6 @@ footer {
   margin-top: 50px;
 }
 .footer-content {
-  /* background-color: black; */
   color: white;
   text-align: center;
 }
@@ -105,18 +103,29 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background: chartreuse; */
   color: white;
 }
-
 @media only screen and (max-width: 688px) {
-  body {
-    background-color: grey;
+  .intro {
+    display: flex;
+    flex-direction: column;
+  }
+  .items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .course {
+    display: flex;
+    flex-direction: column;
   }
 }
 
-@media only screen and (min-width: 689px) and(max-width: 998px) {
-  body {
-    background-color: red;
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+  .items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .course {
+    display: flex;
   }
 }
